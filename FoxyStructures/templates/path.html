@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+{% block title %}Pergola{% endblock %}
+
+{% block content %}
+     <div class="row">
+
+  <!-- Side Bar -->
+
+        <div class="large-4 columns">
+
+          <img src="http://placehold.it/500x500&text=Logo">
+
+          <div class=" panel">
+            <h3>Header</h3>
+            <h5 class="subheader">Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis.
+            </h5>
+          </div>
+
+          
+
+        </div>
+
+    <!-- End Side Bar -->
+
+
+    <!-- Thumbnails -->
+
+        <div class="large-8 columns">
+          <div class="row">
+
+            <div id="standard" class="large-3 small-6 columns">
+                <a href="/Custom">
+              <img src="http://placehold.it/500x500&text=Thumbnail">
+
+              <div class="panel">
+                <h5>Item Name</h5>
+                <h6 class="subheader">$000.00</h6>
+              </div>
+                 </a>
+
+            </div>
+
+            <div id="deluxe" class="large-3 small-6 columns">
+              <img src="http://placehold.it/500x500&text=Thumbnail">
+
+              <div class="panel">
+                <h5>Item Name</h5>
+                <h6 class="subheader">$000.00</h6>
+              </div>
+            </div>
+
+            <div id="arched" class="large-3 small-6 columns">
+              <img src="http://placehold.it/500x500&text=Thumbnail">
+
+              <div class="panel">
+                <h5>Item Name</h5>
+                <h6 class="subheader">$000.00</h6>
+              </div>
+            </div>
+
+            <div id="wall_mounted" class="large-3 small-6 columns">
+              <img src="http://placehold.it/500x500&text=Thumbnail">
+
+              <div class="panel">
+                <h5>Item Name</h5>
+                <h6 class="subheader">$000.00</h6>
+              </div>
+            </div>
+
+            <div id="Custom" class="large-3 small-6 columns">
+              <img src="http://placehold.it/500x500&text=Thumbnail">
+
+              <div class="panel">
+                <h5>Item Name</h5>
+                <h6 class="subheader">$000.00</h6>
+              </div>
+            </div>
+
+            <div id="Combo" class="large-3 small-6 columns">
+              <img src="http://placehold.it/500x500&text=Thumbnail">
+
+              <div class="panel">
+                <h5>Item Name</h5>
+                <h6 class="subheader">$000.00</h6>
+              </div>
+            </div>
+
+               <div id="Eyebrow" class="large-3 small-6 columns">
+              <img src="http://placehold.it/500x500&text=Thumbnail">
+
+              <div class="panel">
+                <h5>Item Name</h5>
+                <h6 class="subheader">$000.00</h6>
+              </div>
+            </div>
+
+               <div id="ramada" class="large-3 small-6 columns">
+              <img src="http://placehold.it/500x500&text=Thumbnail">
+
+              <div class="panel">
+                <h5>Item Name</h5>
+                <h6 class="subheader">$000.00</h6>
+              </div>
+            </div>
+
+
+
+          </div>
+
+    <!-- End Thumbnails -->
+
+
+    <!-- Managed By -->
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="panel">
+                <div class="row">
+
+                  <div class="large-2 small-6 columns">
+                    <img src="http://placehold.it/300x300&text=Site Owner">
+                  </div>
+
+                  <div class="large-10 small-6 columns">
+                    <strong>This Site Is Managed By<hr/></strong>
+
+                    Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+    <!-- End Managed By -->
+
+          </div>
+        </div>
+      </div>
+    
+
+{% endblock %}
+{% block scripts %}
+    <script type="text/javascript">
+    $(document).ready(function () {
+         resize();
+        });
+
+    $(window).resize(function () {
+        resize();
+    });
+
+    function resize()
+    {
+        if ($(window).width() >= 1440) {
+            $('#Eyebrow').removeClass().addClass('large-3 small-6 columns show');
+            $('#ramada').removeClass().addClass('large-3 small-6 columns show');
+            $('#standard').removeClass().addClass('large-3 small-6 columns show');
+            $('#deluxe').removeClass().addClass('large-3 small-6 columns show');
+            $('#arched').removeClass().addClass('large-3 small-6 columns show');
+            $('#wall_mounted').removeClass().addClass('large-3 small-6 columns show');
+            $('#Combo').removeClass().addClass('large-3 small-6 columns show');
+            $('#Custom').removeClass().addClass('large-3 small-6 columns show');
+        }
+        if($(window).width() < 1440) {
+            $('#Eyebrow').removeClass().addClass('large-4 small-6 columns hide');
+            $('#ramada').removeClass().addClass('large-4 small-6 columns hide');
+            $('#standard').removeClass().addClass('large-4 small-6 columns show');
+            $('#deluxe').removeClass().addClass('large-4 small-6 columns show');
+            $('#arched').removeClass().addClass('large-4 small-6 columns show');
+            $('#wall_mounted').removeClass().addClass('large-4 small-6 columns show');
+            $('#Combo').removeClass().addClass('large-4 small-6 columns show');
+            $('#Custom').removeClass().addClass('large-4 small-6 columns show');
+        }
+    }
+    </script>
+    {% endblock %}

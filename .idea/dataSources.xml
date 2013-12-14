@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3400128962">
+    <data-source source="LOCAL" name="Django default" uuid="0e2eed02-00da-4386-9244-3123b5357435">
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/DataMine</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Django default2" uuid="d50f2e43-655d-419e-8e05-9b63d8290c8b">
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/DataMine</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

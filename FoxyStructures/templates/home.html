@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+
+{% block title %} Welcome to FoxyStructures {% endblock %}
+
+{% block content %}
+  <div class="row">
+        <div class="large-9 columns">
+      <div class="large-12 columns">
+       <ul data-orbit>
+  <li data-orbit-slide="headline-1">
+    <h2>Headline 1</h2>
+    <h3>Subheadline</h3>
+    <p>Pellentesque habitant morbi tristique senectus.</p>
+  </li>
+  <li data-orbit-slide="headline-2">
+    <h2>Headline 2</h2>
+    <h3>Subheadline</h3>
+    <p>Pellentesque habitant morbi tristique senectus.</p>
+  </li>
+  <li data-orbit-slide="headline-3">
+    <h2>Headline 3</h2>
+    <h3>Subheadline</h3>
+    <p>Pellentesque habitant morbi tristique senectus.</p>
+  </li>
+</ul>
+
+<!-- link to the slides above -->
+<ul class="disc">
+  <li><a href="#" data-orbit-link="headline-1">Goto Slide 1</a></li>
+  <li><a href="#" data-orbit-link="headline-2">Goto Slide 2</a></li>
+  <li><a href="#" data-orbit-link="headline-3">Goto Slide 3</a></li>
+</ul>
+        <hr>
+      </div>
+
+    <div class="row">
+     <div class="large-12 columns">
+     <div id="pergola" class="large-2 columns">
+         <a href="/Pergola">
+          <img src="http://placehold.it/250x250&text=Thumbnail" />
+          <h6 class="panel">Pergolas</h6>
+          </a>
+      </div>
+      <div id="backyard_pavilion" class="large-2 columns">
+          <img src="http://placehold.it/250x250&text=Thumbnail" />
+          <h6 class="panel">Backyard Pavilion</h6>
+      </div>
+      <div id="luxury_pergola" class="large-2 columns">
+          <img src="http://placehold.it/250x250&text=Thumbnail" />
+          <h6 class="panel">Luxury Pergola</h6>
+      </div>
+      <div id="luxury_ramada" class="large-2 columns">
+          <img src="http://placehold.it/250x250&text=Thumbnail" />
+          <h6 class="panel">Luxury Ramada</h6>
+      </div>
+      <div id="featured" class="large-2 columns">
+          <img src="http://placehold.it/250x250&text=Thumbnail" />
+          <h6 class="panel">Featured</h6>
+      </div>
+      <div id="all" class="large-2 columns">
+          <img src="http://placehold.it/250x250&text=Thumbnail" />
+          <h6 class="panel">Browse All</h6>
+      </div>
+     </div>
+    </div>
+
+        <div class="row">
+     <div class="large-12 columns">
+      <div id="customer1" class="large-2 columns">
+          <img src="http://placehold.it/250x250&text=Thumbnail" />
+          <h6 class="panel">Description</h6>
+      </div>
+        <div  id="customer2" class="large-2 columns">
+          <img src="http://placehold.it/250x250&text=Thumbnail" />
+          <h6 class="panel">Description</h6>
+      </div>
+        <div id="customer3" class="large-2 columns">
+          <img src="http://placehold.it/250x250&text=Thumbnail" />
+          <h6 class="panel">Description</h6>
+      </div>
+        <div id="customer4" class="large-2 columns">
+          <img src="http://placehold.it/250x250&text=Thumbnail" />
+          <h6 class="panel">Description</h6>
+      </div>
+          <div id="customer5" class="large-2 columns">
+          <img src="http://placehold.it/250x250&text=Thumbnail" />
+          <h6 class="panel">Description</h6>
+      </div>
+          <div  id="customer6" class="large-2 columns ">
+          <img src="http://placehold.it/250x250&text=Thumbnail" />
+          <h6 id="screen" class="panel"></h6>
+      </div>
+         </div>
+    </div>
+</div>
+
+        <div class="large-3 columns">
+            <div class="panel">
+                 <a class="large button expand" href="#">
+            Call To Action!
+          </a>
+                 <a class="large button expand" href="#">
+            Call To Action!
+          </a>
+                 <a class="large button expand" href="#">
+            Call To Action!
+          </a>
+                 <a class="large button expand" href="#">
+            Call To Action!
+          </a>
+                 <a class="large button expand" href="#">
+            Call To Action!
+          </a>
+                 <a class="large button expand" href="#">
+            Call To Action!
+          </a>
+            </div>
+        </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+
+        $(document).ready(function () {
+            check_pic_size();
+            check_size();
+        });
+
+        $(window).resize(function () {
+            check_pic_size();
+            check_size();
+        });
+
+        function check_pic_size() {
+            $('#screen').html('');
+            $('#screen').append($(window).width());
+
+            if ($(window).width() >= 768 && $(window).width() <= 1024) {
+                $('#customer1').removeClass().addClass('large-4 columns');
+                $('#customer2').removeClass().addClass('large-4 columns');
+                $('#customer3').removeClass().addClass('large-4 columns hide');
+                $('#customer4').removeClass().addClass('large-4 columns hide');
+                $('#customer5').removeClass().addClass('large-4 columns hide');
+                $('#customer6').removeClass().addClass('large-4 columns');
+            }
+
+            if ($(window).width() > 1024 && $(window).width() <= 1280) {
+                $('#customer1').removeClass().addClass('large-3 columns');
+                $('#customer2').removeClass().addClass('large-3 columns');
+                $('#customer3').removeClass().addClass('large-3 columns show');
+                $('#customer4').removeClass().addClass('large-3 columns hide');
+                $('#customer5').removeClass().addClass('large-3 columns hide');
+                $('#customer6').removeClass().addClass('large-3 columns');
+            }
+            if ($(window).width() > 1280) {
+                $('#customer1').removeClass().addClass('large-2 columns');
+                $('#customer2').removeClass().addClass('large-2 columns');
+                $('#customer3').removeClass().addClass('large-2 columns show');
+                $('#customer4').removeClass().addClass('large-2 columns show');
+                $('#customer5').removeClass().addClass('large-2 columns show');
+                $('#customer6').removeClass().addClass('large-2 columns');
+            }
+        }
+
+        function check_size() {
+            $('#screen').html('');
+            $('#screen').append($(window).width());
+
+            if ($(window).width() >= 768 && $(window).width() <= 1024) {
+                $('#pergola').removeClass().addClass('large-4 columns');
+                $('#backyard_pavilion').removeClass().addClass('large-4 columns');
+                $('#luxury_pergola').removeClass().addClass('large-4 columns hide');
+                $('#luxury_ramada').removeClass().addClass('large-4 columns hide');
+                $('#featured').removeClass().addClass('large-4 columns hide');
+                $('#all').removeClass().addClass('large-4 columns');
+            }
+
+            if ($(window).width() > 1024 && $(window).width() <= 1280) {
+                $('#pergola').removeClass().addClass('large-3 columns');
+                $('#backyard_pavilion').removeClass().addClass('large-3 columns');
+                $('#luxury_pergola').removeClass().addClass('large-3 columns show');
+                $('#luxury_ramada').removeClass().addClass('large-3 columns hide');
+                $('#featured').removeClass().addClass('large-3 columns hide');
+                $('#all').removeClass().addClass('large-3 columns');
+            }
+            if ($(window).width() > 1280) {
+                $('#pergola').removeClass().addClass('large-2 columns');
+                $('#backyard_pavilion').removeClass().addClass('large-2 columns');
+                $('#luxury_pergola').removeClass().addClass('large-2 columns show');
+                $('#luxury_ramada').removeClass().addClass('large-2 columns show');
+                $('#featured').removeClass().addClass('large-2 columns show');
+                $('#all').removeClass().addClass('large-2 columns');
+            }
+        }
+    </script>
+
+{% endblock %}

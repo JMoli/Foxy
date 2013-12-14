@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{% block title %}{% endblock %}</title>
+     {% load static from staticfiles %}
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %} " />
+        <link rel="stylesheet" href="{% static 'css/foundation.css' %}" />
+          <script src="{% static 'js/vendor/custom.modernizr.js' %}"></script>
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body >
+
+
+         <!-- Header and Nav -->
+
+  <div class="row" >
+      <a href="/">
+        <div class="large-3 columns">
+            <h1><img src="http://placehold.it/400x100&text=Logo"></h1>
+        </div>
+      </a>
+    <div class="large-9 columns">
+      <ul class="button-group right">
+        <li><a href="#" class="success button">Ramadas</a></li>
+        <li><a href="#" class="success button">Gazebos</a></li>
+        <li><a href="#" class="success button">Pergolas</a></li>
+        <li><a href="#" class="success button">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- End Header and Nav -->
+                     <!-- Main Content -->
+{% block content %}{% endblock %}
+                       <!-- End Main Content -->
+<!-- START FOOTER -->
+        <footer class="row">
+            <div class="large-12 columns">
+                <div class="large-6 columns">
+                    <p>&copy FoxyStructures</p>
+                </div>
+            </div>
+        </footer>
+
+
+          <!-- END FOOTER -->
+
+  <!-- START FOUNDATION JS CALLS -->
+        <script>
+            document.write('<script src=' +
+            ('__proto__' in {} ? '{% static 'js/vendor/zepto' %}' : '{% static '/Content/js/vendor/jquery' %}') +
+            '.js><\/script>')
+  </script>
+
+  <script src="{% static 'js/foundation/foundation.js' %}" ></script>
+  <script src="{% static 'js/foundation/foundation.alerts.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.clearing.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.cookie.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.dropdown.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.forms.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.joyride.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.magellan.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.orbit.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.placeholder.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.reveal.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.section.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.tooltips.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.topbar.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.interchange.js' %}"></script>
+  <script>
+      $(document).foundation();
+  </script>
+
+  <!-- END FOUNDATION CALLS -->
+
+
+ {% block scripts %}{% endblock %}
+
+    </body>
+</html>

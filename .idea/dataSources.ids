@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Django default" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="0e2eed02-00da-4386-9244-3123b5357435">
+    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+    <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/DataMine</jdbc-url>
+    <libraries/>
+  </data-source>
+  <data-source source="LOCAL" name="Django default2" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="d50f2e43-655d-419e-8e05-9b63d8290c8b">
+    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+    <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/DataMine</jdbc-url>
+    <libraries/>
+  </data-source>
+</component>
