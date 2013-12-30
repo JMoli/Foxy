@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{% block title %}{% endblock %}</title>
+     {% load static from staticfiles %}
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %} " />
+        <link rel="stylesheet" href="{% static 'css/foundation.css' %}" />
+          <script src="{% static 'js/vendor/custom.modernizr.js' %}"></script>
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body style="background: #2e8cea;
+background: -moz-linear-gradient(top,  #2e8cea 0%, #ffffff 26%, #ffffff 67%, #e3e4e5 94%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2e8cea), color-stop(26%,#ffffff), color-stop(67%,#ffffff), color-stop(94%,#e3e4e5));
+background: -webkit-linear-gradient(top,  #2e8cea 0%,#ffffff 26%,#ffffff 67%,#e3e4e5 94%);
+background: -o-linear-gradient(top,  #2e8cea 0%,#ffffff 26%,#ffffff 67%,#e3e4e5 94%);
+background: -ms-linear-gradient(top,  #2e8cea 0%,#ffffff 26%,#ffffff 67%,#e3e4e5 94%);
+background: linear-gradient(to bottom,  #2e8cea 0%,#ffffff 26%,#ffffff 67%,#e3e4e5 94%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e8cea', endColorstr='#e3e4e5',GradientType=0 );
+">
+
+
+         <!-- Header and Nav -->
+
+  <div class="row" style="background: #7db9e8;
+background: -moz-radial-gradient(center, ellipse cover,  #7db9e8 13%, #2989d8 50%, #207cca 75%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(13%,#7db9e8), color-stop(50%,#2989d8), color-stop(75%,#207cca));
+background: -webkit-radial-gradient(center, ellipse cover,  #7db9e8 13%,#2989d8 50%,#207cca 75%);
+background: -o-radial-gradient(center, ellipse cover,  #7db9e8 13%,#2989d8 50%,#207cca 75%);
+background: -ms-radial-gradient(center, ellipse cover,  #7db9e8 13%,#2989d8 50%,#207cca 75%);
+background: radial-gradient(ellipse at center,  #7db9e8 13%,#2989d8 50%,#207cca 75%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#207cca',GradientType=1 );
+">
+      <a href="/">
+        <div class="large-3 columns">
+            <h1><!-- <img src="http://10000fans.biz/wp-content/uploads/2013/11/logo-wo-txt-o.jpg"> --></h1>
+        </div>
+      </a>
+    <div class="large-9 columns">
+      <ul class="button-group right">
+      
+        <li><a href="#" class="success button">Contact</a></li>
+        <li><a href="#" class="success button">Contact</a></li>
+        <li><a href="#" class="success button">Contact</a></li>
+        <li><a href="#" class="success button">Contact</a></li>   
+        <li><a href="#" class="success button">Join Our Parish</a></li>
+      </ul>
+    </div>
+    
+  </div>
+      
+      <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1>
+          <a href="#">Home:
+          </a>
+        </h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a class="active" href="#">Our Parish</a>
+          <ul class="dropdown">
+            <li><a href="#">Support Staff</a></li>
+            <li><a href="#">Pastoral Council</a></li>
+            <li><a href="#">Finance Council</a></li>
+            
+          </ul>
+        </li>
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a href="#">Ministries</a>
+          <ul class="dropdown">
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+          </ul>
+        </li>
+
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a href="#">Liturgy</a>
+          <ul class="dropdown">
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+          </ul>
+        </li>
+           <li class="divider"></li>
+        
+       
+      </ul>
+
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="divider"></li>
+           <li class="has-dropdown">
+           
+          <a href="#">Store</a>
+          <ul class="dropdown">
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+          </ul>
+        </li>
+        
+            <li class="divider"></li>
+           <li class="has-dropdown">
+           
+          <a href="#">Upcomming Events</a>
+          <ul class="dropdown">
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+          </ul>
+        </li>
+           <li class="divider"></li>
+        <li><a href="#">Links</a></li>
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a href="#">Bulletins</a>
+          <ul class="dropdown">
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
+
+
+  <!-- End Header and Nav -->
+                     <!-- Main Content -->
+{% block content %}{% endblock %}
+                       <!-- End Main Content -->
+<!-- START FOOTER -->
+        <footer class="row">
+          <div class="large-12 columns" style="background-color:black;">
+              
+                <div class="large-6 columns">
+                    <p>&copy; 2013 Saint Richard Parish</p>
+                </div>
+              
+            </div>
+        </footer>
+
+
+          <!-- END FOOTER -->
+
+  <!-- START FOUNDATION JS CALLS -->
+  <!--      <script>document.write('<script src=' +('__proto__' in {} ? '{% static 'js/vendor/zepto' %}' : '{% static '/Content/js/vendor/jquery' %}') +'.js><\/script>')</script> -->
+
+      <script src="{% static 'js/vendor/jquery.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.js' %}" ></script>
+  <script src="{% static 'js/foundation/foundation.alerts.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.clearing.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.cookie.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.dropdown.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.forms.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.joyride.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.magellan.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.orbit.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.placeholder.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.reveal.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.section.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.tooltips.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.topbar.js' %}"></script>
+  <script src="{% static 'js/foundation/foundation.interchange.js' %}"></script>
+  <script>
+      $(document).foundation();
+  </script>
+
+  <!-- END FOUNDATION CALLS -->
+
+
+ {% block scripts %}{% endblock %}
+
+    </body>
+</html>
