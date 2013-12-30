@@ -1,12 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
-def home(request):
-    return render(request, 'home.html', {})
+def style(request, style):
+    return render(request, 'style.html', {})
+  
+def material(request):
+    return render(request, 'custom.html', {'length': request.session['length']})
 
-def path(request):
-
-    return render(request, 'path.html', {})
-
-def custom(request):
-    return render(request, 'custom.html', {})
+def builder(request):
+    return render(request, 'custom.html', {'length': request.session['length']})
